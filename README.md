@@ -58,21 +58,14 @@ apis-group-manager/
 ├── .gitignore
 ├── .vercelignore
 ├── README.md
-
 ├── api/
 │   └── webhook.js
-
 ├── scripts/
 │   └── set-webhook.js
-
 ├── handlers/
-
 ├── commands/
-
 ├── middleware/
-
 ├── utils/
-
 └── database/
 
 ---
