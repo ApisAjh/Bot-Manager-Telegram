@@ -48,7 +48,7 @@ Bot ini dibuat untuk membantu mengelola grup Telegram dengan fitur moderasi, pro
 ## 📂 Structure
 
 ```text
-apis-group-manager/
+Bot-Manager-Telegram/
 │
 ├── index.js
 ├── bot.js
