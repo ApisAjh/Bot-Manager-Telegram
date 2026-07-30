@@ -167,9 +167,11 @@ npm run webhook:set
 3. Deploy project.
 4. Daftarkan webhook Telegram.
 
-Webhook:
+Webhook endpoint:
 
+```text
 https://nama-project.vercel.app/api/webhook
+```
 
 ---
 
