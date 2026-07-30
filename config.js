@@ -3,9 +3,9 @@
 
 import 'dotenv/config';
 
-export const BOT_TOKEN = process.env.BOT_TOKEN || "YOUR_BOT_TOKEN";
-export const BOT_NAME = "Apis Group Manager";
-export const DEVELOPER_NAME = "Apis";
+export const BOT_TOKEN = process.env.BOT_TOKEN || "";
+export const BOT_NAME = process.env.BOT_NAME || "Apis Group Manager";
+export const DEVELOPER_NAME = process.env.DEVELOPER_NAME || "Apis";
 
 // ID Telegram numerik pemilik/owner bot (pisahkan dengan koma jika lebih dari satu)
 export const OWNER_IDS = (process.env.OWNER_IDS || "")
