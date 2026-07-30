@@ -117,30 +117,27 @@ npm install
 
 ## ⚙️ Environment Variables
 
+```env
 BOT_TOKEN=isi-token-bot-anda
 
 OWNER_IDS=123456789
 
 BOT_NAME=isi nama bot anda
-
-DEVELOPER_NAME=isi nama anda 
+DEVELOPER_NAME=isi nama developer anda
 
 WEBHOOK_DOMAIN=https://nama-project.vercel.app
-
-WEBHOOK_SECRET=(Opsional/Tidak Wajib)
+WEBHOOK_SECRET=
 
 DB_PATH=./database/apis.db
 
 FLOOD_LIMIT=5
-
 FLOOD_INTERVAL_MS=6000
 
 RAID_JOIN_LIMIT=8
-
 RAID_INTERVAL_MS=15000
 
 MAX_WARN=3
-
+```
 ---
 
 ## ▶️ Running
@@ -172,17 +169,29 @@ https://nama-project.vercel.app/api/webhook
 
 1. Buat file baru di folder:
 
+```text
 commands/<kategori>/
+```
 
 2. Export handler:
 
+```js
 async (ctx) => {}
+```
 
-3. Daftarkan:
+3. Daftarkan command:
 
+```js
 bot.command("namacommand", ...middlewares, safe(handler))
+```
 
-4. Gunakan buildMessage() dari utils/formatter.js agar format pesan konsisten.
+4. Gunakan `buildMessage()` dari:
+
+```text
+utils/formatter.js
+```
+
+agar format pesan tetap konsisten dengan header dan footer bot.
 
 ---
 
