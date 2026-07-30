@@ -48,7 +48,7 @@ Bot ini dibuat untuk membantu mengelola grup Telegram dengan fitur moderasi, pro
 ## 📂 Structure
 
 apis-group-manager/
-
+│
 ├── index.js
 ├── bot.js
 ├── config.js
@@ -58,15 +58,83 @@ apis-group-manager/
 ├── .gitignore
 ├── .vercelignore
 ├── README.md
+│
 ├── api/
 │   └── webhook.js
+│
 ├── scripts/
 │   └── set-webhook.js
+│
 ├── handlers/
+│   ├── errorHandler.js
+│   ├── messageHandler.js
+│   └── memberHandler.js
+│
 ├── commands/
+│   ├── general/
+│   │   ├── start.js
+│   │   ├── help.js
+│   │   ├── about.js
+│   │   ├── ping.js
+│   │   ├── settings.js
+│   │   ├── rules.js
+│   │   └── admins.js
+│   │
+│   ├── moderation/
+│   │   ├── ban.js
+│   │   ├── unban.js
+│   │   ├── kick.js
+│   │   ├── mute.js
+│   │   ├── unmute.js
+│   │   ├── warn.js
+│   │   ├── unwarn.js
+│   │   ├── resetwarn.js
+│   │   ├── purge.js
+│   │   ├── pin.js
+│   │   ├── unpin.js
+│   │   ├── promote.js
+│   │   └── demote.js
+│   │
+│   ├── protection/
+│   │   └── protectionSettings.js
+│   │
+│   ├── welcome/
+│   │   └── welcomeSettings.js
+│   │
+│   └── utility/
+│       ├── poll.js
+│       ├── userinfo.js
+│       ├── chatinfo.js
+│       ├── broadcast.js
+│       ├── stats.js
+│       └── uptime.js
+│
 ├── middleware/
+│   ├── groupOnly.js
+│   ├── adminCheck.js
+│   ├── ownerCheck.js
+│   ├── errorHandler.js
+│   ├── antiLink.js
+│   ├── antiSpam.js
+│   ├── antiFlood.js
+│   ├── antiArabic.js
+│   ├── antiForward.js
+│   ├── antiBot.js
+│   ├── antiServiceMessage.js
+│   └── antiStickerSpam.js
+│
 ├── utils/
+│   ├── formatter.js
+│   ├── markdown.js
+│   ├── logger.js
+│   └── permission.js
+│
 └── database/
+    ├── db.js
+    ├── schema.sql
+    ├── chatSettings.js
+    ├── warnings.js
+    └── users.js
 
 ---
 
