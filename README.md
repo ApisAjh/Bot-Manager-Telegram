@@ -47,6 +47,7 @@ Bot ini dibuat untuk membantu mengelola grup Telegram dengan fitur moderasi, pro
 
 ## 📂 Structure
 
+```text
 apis-group-manager/
 │
 ├── index.js
@@ -72,56 +73,18 @@ apis-group-manager/
 │
 ├── commands/
 │   ├── general/
-│   │   ├── start.js
-│   │   ├── help.js
-│   │   ├── about.js
-│   │   ├── ping.js
-│   │   ├── settings.js
-│   │   ├── rules.js
-│   │   └── admins.js
-│   │
 │   ├── moderation/
-│   │   ├── ban.js
-│   │   ├── unban.js
-│   │   ├── kick.js
-│   │   ├── mute.js
-│   │   ├── unmute.js
-│   │   ├── warn.js
-│   │   ├── unwarn.js
-│   │   ├── resetwarn.js
-│   │   ├── purge.js
-│   │   ├── pin.js
-│   │   ├── unpin.js
-│   │   ├── promote.js
-│   │   └── demote.js
-│   │
 │   ├── protection/
-│   │   └── protectionSettings.js
-│   │
 │   ├── welcome/
-│   │   └── welcomeSettings.js
-│   │
 │   └── utility/
-│       ├── poll.js
-│       ├── userinfo.js
-│       ├── chatinfo.js
-│       ├── broadcast.js
-│       ├── stats.js
-│       └── uptime.js
 │
 ├── middleware/
 │   ├── groupOnly.js
 │   ├── adminCheck.js
 │   ├── ownerCheck.js
-│   ├── errorHandler.js
 │   ├── antiLink.js
 │   ├── antiSpam.js
-│   ├── antiFlood.js
-│   ├── antiArabic.js
-│   ├── antiForward.js
-│   ├── antiBot.js
-│   ├── antiServiceMessage.js
-│   └── antiStickerSpam.js
+│   └── antiFlood.js
 │
 ├── utils/
 │   ├── formatter.js
@@ -135,6 +98,8 @@ apis-group-manager/
     ├── chatSettings.js
     ├── warnings.js
     └── users.js
+```
+
 
 ---
 
