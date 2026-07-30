@@ -107,11 +107,15 @@ Bot-Manager-Telegram/
 
 Clone repository:
 
+```bash
 git clone https://github.com/username/apis-group-manager.git
+```
 
 Install dependency:
 
+```bash
 npm install
+```
 
 ---
 
@@ -126,7 +130,7 @@ BOT_NAME=isi nama bot anda
 DEVELOPER_NAME=isi nama developer anda
 
 WEBHOOK_DOMAIN=https://nama-project.vercel.app
-WEBHOOK_SECRET=
+WEBHOOK_SECRET=(Opsional/Tidak Wajib)
 
 DB_PATH=./database/apis.db
 
@@ -144,11 +148,15 @@ MAX_WARN=3
 
 Development:
 
+```bash
 npm start
+```
 
 Webhook:
 
+```bash
 npm run webhook:set
+```
 
 ---
 
